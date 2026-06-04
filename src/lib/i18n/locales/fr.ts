@@ -47,6 +47,7 @@ const fr: Locale = {
   "actionBar.compressSelected": "Compresser la sélection",
   "actionBar.compressing": "Compression…",
   "actionBar.compressAll": "Tout compresser",
+  "actionBar.recompress": "Recompresser",
   "actionBar.download": "Télécharger",
   "actionBar.xml": "XML",
   "actionBar.fonts": "Polices",

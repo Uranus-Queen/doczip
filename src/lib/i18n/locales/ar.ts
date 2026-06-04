@@ -47,6 +47,7 @@ const ar: Locale = {
   "actionBar.compressSelected": "ضغط المحدد",
   "actionBar.compressing": "جارٍ الضغط…",
   "actionBar.compressAll": "ضغط الكل",
+  "actionBar.recompress": "إعادة الضغط",
   "actionBar.download": "تحميل",
   "actionBar.xml": "XML",
   "actionBar.fonts": "خطوط",

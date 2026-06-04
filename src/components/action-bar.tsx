@@ -6,13 +6,14 @@ import { useI18n, type LocaleCode } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Zap, FileDown, Download, TrendingDown, ArrowRight, Check } from "lucide-react";
+import { Zap, FileDown, Download, TrendingDown, ArrowRight, Check, RotateCcw } from "lucide-react";
 
 interface ActionBarProps {
   compressionLevel: CompressionLevel;
   onLevelChange: (level: CompressionLevel) => void;
   onCompressSelected: () => void;
   onCompressAll: () => void;
+  onRecompress?: () => void;
   resources: ResourceNode[];
   isCompressing: boolean;
   isOffice?: boolean;
@@ -34,7 +35,7 @@ const LEVEL_KEY: Record<CompressionLevel, "actionBar.levelLow" | "actionBar.leve
 };
 
 export function ActionBar({
-  compressionLevel, onLevelChange, onCompressSelected, onCompressAll,
+  compressionLevel, onLevelChange, onCompressSelected, onCompressAll, onRecompress,
   resources, isCompressing, isOffice, stripFonts, onStripFontsChange, minifyXml, onMinifyXmlChange,
   compressedBlob, compressedSize = 0, originalSize = 0, fileName,
 }: ActionBarProps) {
@@ -69,7 +70,10 @@ export function ActionBar({
               <TrendingDown className="h-3 w-3 text-[#34C759]" />
               <span className="text-[12px] font-semibold text-[#34C759]">-{compressionRatio(originalSize!, compressedSize)}%</span>
             </div>
-            <Button onClick={download} className="ml-auto gap-2 rounded-xl px-5 h-9 text-[13px] font-semibold bg-[#34C759] hover:bg-[#30B350] text-white shadow-sm active:scale-[0.97] transition-all duration-150">
+            <Button onClick={onRecompress} variant="ghost" className="gap-1.5 rounded-xl px-4 h-9 text-[12px] font-medium text-muted-foreground hover:text-foreground shrink-0">
+              <RotateCcw className="h-3.5 w-3.5" /> {t("actionBar.recompress")}
+            </Button>
+            <Button onClick={download} className="gap-2 rounded-xl px-5 h-9 text-[13px] font-semibold bg-[#34C759] hover:bg-[#30B350] text-white shadow-sm active:scale-[0.97] transition-all duration-150">
               <Download className="h-4 w-4" /> {t("actionBar.download")}
             </Button>
           </>

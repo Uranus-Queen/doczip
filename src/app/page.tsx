@@ -99,6 +99,12 @@ export default function Home() {
     clearFileCache();
   };
 
+  const handleRecompress = useCallback(() => {
+    setCompressedBlob(null);
+    setCompressedSize(0);
+    setError(null);
+  }, []);
+
   // ─── Landing ───
   if (!file) {
     return (
@@ -246,6 +252,7 @@ export default function Home() {
           <ActionBar
             compressionLevel={compressionLevel} onLevelChange={setCompressionLevel}
             onCompressSelected={handleCompressSelected} onCompressAll={handleCompressAll}
+            onRecompress={handleRecompress}
             resources={resources} isCompressing={isCompressing} isOffice={isOffice}
             stripFonts={stripFonts} onStripFontsChange={setStripFonts}
             minifyXml={minifyXml} onMinifyXmlChange={setMinifyXml}

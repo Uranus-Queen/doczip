@@ -47,6 +47,7 @@ const zh: Locale = {
   "actionBar.compressSelected": "压缩选中",
   "actionBar.compressing": "压缩中…",
   "actionBar.compressAll": "全部压缩",
+  "actionBar.recompress": "重新压缩",
   "actionBar.download": "下载",
   "actionBar.xml": "XML",
   "actionBar.fonts": "字体",

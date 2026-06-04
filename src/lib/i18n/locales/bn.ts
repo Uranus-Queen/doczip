@@ -47,6 +47,7 @@ const bn: Locale = {
   "actionBar.compressSelected": "নির্বাচিত কম্প্রেস করুন",
   "actionBar.compressing": "কম্প্রেশন চলছে…",
   "actionBar.compressAll": "সব কম্প্রেস করুন",
+  "actionBar.recompress": "পুনরায় কম্প্রেস",
   "actionBar.download": "ডাউনলোড",
   "actionBar.xml": "XML",
   "actionBar.fonts": "ফন্ট",

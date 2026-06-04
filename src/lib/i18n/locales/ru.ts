@@ -47,6 +47,7 @@ const ru: Locale = {
   "actionBar.compressSelected": "Сжать выбранное",
   "actionBar.compressing": "Сжатие…",
   "actionBar.compressAll": "Сжать всё",
+  "actionBar.recompress": "Сжать заново",
   "actionBar.download": "Скачать",
   "actionBar.xml": "XML",
   "actionBar.fonts": "Шрифты",

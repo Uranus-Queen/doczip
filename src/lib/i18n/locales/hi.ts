@@ -47,6 +47,7 @@ const hi: Locale = {
   "actionBar.compressSelected": "चयनित संपीड़ित करें",
   "actionBar.compressing": "संपीड़न हो रहा है…",
   "actionBar.compressAll": "सभी संपीड़ित करें",
+  "actionBar.recompress": "पुनः संपीड़न",
   "actionBar.download": "डाउनलोड",
   "actionBar.xml": "XML",
   "actionBar.fonts": "फ़ॉन्ट",

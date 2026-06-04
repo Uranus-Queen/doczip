@@ -47,6 +47,7 @@ const es: Locale = {
   "actionBar.compressSelected": "Comprimir seleccionados",
   "actionBar.compressing": "Comprimiendo…",
   "actionBar.compressAll": "Comprimir todo",
+  "actionBar.recompress": "Recomprimir",
   "actionBar.download": "Descargar",
   "actionBar.xml": "XML",
   "actionBar.fonts": "Fuentes",

@@ -54,6 +54,7 @@ const en = {
   "actionBar.compressSelected": "Compress Selected",
   "actionBar.compressing": "Compressing…",
   "actionBar.compressAll": "Compress All",
+  "actionBar.recompress": "Recompress",
   "actionBar.download": "Download",
   "actionBar.xml": "XML",
   "actionBar.fonts": "Fonts",
